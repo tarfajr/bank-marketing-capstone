@@ -18,7 +18,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    return joblib.load("bank_marketing_model_package.pkl")
+    return joblib.load("bank_marketing_model_package_compressed.pkl")
 
 try:
     package = load_model()
